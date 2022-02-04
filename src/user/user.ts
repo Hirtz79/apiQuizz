@@ -4,13 +4,7 @@ import { v4 as uuidv4 } from 'uuid';
 
 @Injectable()
 export class UserProvider {
-  users: User[] = [
-    {
-      id: 'dede',
-      pseudo: 'Thomas',
-      score: 0,
-    },
-  ];
+  users: User[] = [];
 
   getPatient(): User[] {
     return this.users;
